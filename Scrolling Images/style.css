@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: lightblue;
+    color: aliceblue;
+}
+
+.card{
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+.card1{
+    background: url(https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg);
+    background-size: cover;
+}
+.card2{
+    background: url(https://cdn.pixabay.com/photo/2018/05/31/16/10/rose-3444359_1280.jpg);
+    background-size: cover;
+}
+.card3{
+    background: url(https://cdn.pixabay.com/photo/2018/11/08/12/02/rose-3802424_1280.jpg);
+    background-size: cover;
+}
+.card4{
+    background: url(https://cdn.pixabay.com/photo/2018/06/07/20/54/rose-3460971_960_720.jpg);
+    background-size: cover;
+}
+.card5{
+    background: url(https://cdn.pixabay.com/photo/2019/06/04/20/42/flower-4252296_960_720.jpg);
+    background-size: cover;
+}
+.card6{
+    background: url(https://cdn.pixabay.com/photo/2017/10/27/07/37/pink-2893502_1280.jpg);
+    background-size: cover;
+}
+h2{
+    margin: 1rem;
+}
+
+.card:nth-child(even) {
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+
+.card:nth-child(odd) {
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+
+.card.slidingIn{
+    transform: translateX(0) rotate(0deg) scale(1);
+}
